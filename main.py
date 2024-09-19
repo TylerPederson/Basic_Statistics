@@ -18,6 +18,9 @@ def menu():
             exit()
         if response == "1":
             data = read_in_data()
+        else:
+            print(f"Unrecognized Input: {response}")
+            continue
         report_data(data)
 
 
